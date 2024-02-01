@@ -1,0 +1,31 @@
+### Login
+POST http://studyboard-backend.test/authentication/login.php
+Content-Type: application/json
+
+{
+  "email": "student@app.com",
+  "password": "password"
+}
+
+
+### Register
+POST http://studyboard-backend.test/authentication/register.php
+Content-Type: application/json
+
+{
+  "email": "ruvin27@gmail.com",
+  "password": "password",
+  "name": "Ruvin Rodrigues",
+  "role": "Student",
+  "phone_number": "1234567890"
+}
+
+
+### Verify OTP
+POST http://studyboard-backend.test/authentication/verifyotp.php
+Content-Type: application/json
+
+{
+  "email": "ruvin27@gmail.com",
+  "otp": "164636"
+}
